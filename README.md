@@ -1,8 +1,9 @@
 
 # Stock Market Price Prediction(Deep Learning Project)
 
-<img width="937" alt="image" src="https://user-images.githubusercontent.com/79760252/189542375-e0d4a9a9-32f0-4774-a9de-5e6b21da439d.png"><img width="933" alt="image" src="https://user-images.githubusercontent.com/79760252/189542434-d7afa9a9-1f83-4d26-8c8d-b8dd3262eea7.png">
-
+<p float="center">
+<img width="450" height="230" hspace='20' alt="image" src="https://user-images.githubusercontent.com/79760252/189542375-e0d4a9a9-32f0-4774-a9de-5e6b21da439d.png"><img width="450" height="230" alt="image" src="https://user-images.githubusercontent.com/79760252/189542434-d7afa9a9-1f83-4d26-8c8d-b8dd3262eea7.png">
+</p>
 
 
 ### Deployed link-:(https://stockforecaster.herokuapp.com/)
