@@ -1,6 +1,6 @@
 
 # Stock Market Price Prediction(Deep Learning Project)
--(https://stockforecaster.herokuapp.com/)
+## Deployed link-:(https://stockforecaster.herokuapp.com/)
 
 
 
