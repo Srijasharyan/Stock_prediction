@@ -13,7 +13,7 @@
 ### Structure of the Project Folder
 - main.py - Consists of deep learning model for processing raw data from yahoo finance api
 - app.py - Consists of callback functions and actual html/css models for building actual webpage layout
-- requirements.txt - Consists of libraries required for importing dependensies 
+- requirements.txt - Consists of libraries required for importing dependencies 
 
 
 ### Methodology
