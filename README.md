@@ -17,7 +17,7 @@ Predicts whether the person in an image is wearing a Mask or not
 #### Dataset
 The given dataset contains various images of people with and without masks ,separated in a large
 number of folders
-![0026](<img width="937" alt="image" src="https://user-images.githubusercontent.com/79760252/189540191-d9f02f36-8908-4d8e-9966-7beb5374524b.png">) <br/>
+![0026](https://user-images.githubusercontent.com/54506517/184806027-0bc03da8-534a-421e-ac3e-4be47416b4f1.jpg) <br/>
 Person with mask
 
 ![0_0_caobingkun_0181](https://user-images.githubusercontent.com/54506517/184806171-334265a1-8fd5-4569-aa7b-a7df00e2a3ca.jpg) <br/>
