@@ -12,13 +12,13 @@
 
 ### Methodology
 
-##### import the required stock data from yahoo finance API
+##### - import the required stock data from yahoo finance API
 
-##### Data preprocessing which transforms data into training sets, testing sets, scaling  model and last price window sequence 
+##### - Data preprocessing which transforms data into training sets, testing sets, scaling  model and last price window sequence 
 
-##### Build deep learning model with user dynamic window sequence, neural layers, feature columns, loss and optimizer 
+##### - Build deep learning model with user dynamic window sequence, neural layers, feature columns, loss and optimizer 
 
-##### Final algorithm to predict stock price for variant number of days with recursive window stock sequence 
+##### - Final algorithm to predict future stock price for variant number of days with recursive window stock sequence 
 
 
 
