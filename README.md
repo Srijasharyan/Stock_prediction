@@ -13,7 +13,7 @@
 ### Structure of the Project Folder
 - main.py - Consists of deep learning model for processing raw data from yahoo finance api
 - app.py - Consists of callback functions and actual html/css models for building actual webpage layout
-- requirements.txt - Consists of libraries required for importing dependencies 
+- requirements.txt - Consists of dependencies required for importing libraries
 
 
 ### Methodology
@@ -24,12 +24,15 @@
 
 - Build deep learning model with user dynamic window sequence, no. of neural layers, feature columns, loss and optimizer 
 
-- Final algorithm to predict future stock price for variant number of days with recursive window stock sequence 
+- Final algorithm to predict future stock price for variant number of days with recursive window stock price sequence 
+
+- Build responsive web layout and interactive graphical plot with dynamic stock and prediction day inputs 
 
 ### Significance
 
 - Highly efficient regressive analysis with deep learning TensorFlow model
 
-- The model is beffited for short term investments/trading  goals
+- The model is beffited for short term investments/trading goals
 
+- Comprises of responsive web layouts and designs for enhanced user experience 
 
