@@ -126,31 +126,24 @@ def process_data(ticker, feature_columns,start,end, n_steps, scale=True, shuffle
 
 
 # build LSTM model for predicting 
-def build_model(sequence_length, n_features, units=80, cell=tf.keras.layers.LSTM, n_layers=3, dropout=0.2,loss="mean_absolute_error", optimizer="adam", bidirectional=False):
+def build_model(sequence_length, n_features, units=80, cell=tf.keras.layers.LSTM, n_layers=3, dropout=0.2,loss="mean_absolute_error", optimizer="adam"):
     model =  tf.keras.Sequential()
     layers=tf.keras.layers
-    for i in range(n_layers):
+    i=0
+    while i<n_layers:
         if i == 0:
             # first layer
-            if bidirectional:
-                model.add(tf.keras.layers.Bidirectional(cell(units, return_sequences=True), batch_input_shape=(None, sequence_length, n_features)))
-            else:
-                model.add(cell(units, return_sequences=True, batch_input_shape=(None, sequence_length, n_features)))
+            model.add(cell(units, return_sequences=True, batch_input_shape=(None, sequence_length, n_features)))
         elif i == n_layers - 1:
             # last layer
-            if bidirectional:
-                model.add(tf.keras.layers.Bidirectional(cell(units, return_sequences=False)))
-            else:
-                model.add(cell(units, return_sequences=False))
+            model.add(cell(units, return_sequences=False))
         else:
             # hidden layers
-            if bidirectional:
-                model.add(tf.keras.layers.Bidirectional(cell(units, return_sequences=True)))
-            else:
-                model.add(cell(units, return_sequences=True))
+            model.add(cell(units, return_sequences=True))
         # add dropout after each layer
         model.add(layers.Dropout(dropout))
-    model.add(layers.Dense(1))
+        i+=1
+    model.add(layers.Dense(1, activation="linear"))
     model.compile(loss=loss, metrics=["mean_absolute_error"], optimizer=optimizer)
     return model
 
