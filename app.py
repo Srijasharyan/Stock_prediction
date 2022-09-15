@@ -131,7 +131,7 @@ def Output2(input_int,btn2,data):
 
 
             Model=build_model(sequence_length=5, n_features=1, units=80, cell=tf.keras.layers.LSTM, n_layers=3, dropout=0.2,
-                loss="mean_absolute_error", optimizer="adam", bidirectional=True)
+                loss="mean_absolute_error", optimizer="adam")
 
             yy=predict_future(Model,Data,int(input_int),25,32,1,5)
             xx=list(range(1,int(input_int)+1))
